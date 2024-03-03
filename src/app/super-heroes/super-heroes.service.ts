@@ -29,4 +29,8 @@ export class SuperHeroesService {
 		return this.http.put(`${BASE_URL}/${id}`, superHero);
 	}
 
+	delete(id: string) {
+		return this.http.delete(`${BASE_URL}/${id}`);
+	}
+
 }
