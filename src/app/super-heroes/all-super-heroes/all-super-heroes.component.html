@@ -1,1 +1,16 @@
-<p>all-super-heroes works!</p>
+<div class="container mt-2">
+	<div class="row row-cols-1 row-cols-md-2 g-4">
+		<div class="col" *ngFor="let item of superHeroes">
+		  <div class="card">
+			<img src="{{item.imageURL}}" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">{{item.name}}</h5>
+			  <p class="card-text"> <b>Franchise: </b> {{item.franchise}}</p>
+			  <p class="card-text">
+				<b>Powers: </b>{{item.powers}}
+			  </p>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>
