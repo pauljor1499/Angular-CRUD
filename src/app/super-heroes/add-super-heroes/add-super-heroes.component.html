@@ -1,0 +1,22 @@
+<div class="container mt-2">
+	<legend>Create</legend>
+	<form>
+		<div class="mb-3">
+			<label for="txtName" class="form-label">Name</label>
+			<input [(ngModel)]="superHeroes.name" type="text" name="bane" class="form-control" id="txtName" aria-describedby="emailHelp">
+		</div>
+		<div class="mb-3">
+			<label for="txtFranchise" class="form-label">Franchise</label>
+			<input [(ngModel)]="superHeroes.franchise" type="text" name="franchise" class="form-control" id="txtFranchise" aria-describedby="emailHelp">
+		</div>
+		<div class="mb-3">
+			<label for="txtImageURL" class="form-label">Image URL</label>
+			<input [(ngModel)]="superHeroes.imageURL" type="text" name="imageURL" class="form-control" id="txtImageURL" aria-describedby="emailHelp">
+		</div>
+		<div class="mb-3">
+			<label for="txtPowers" class="form-label">Powers</label>
+			<textarea [(ngModel)]="superHeroes.powers" name="powers" class="form-control" id="txtPowers" rows="3"></textarea>
+		</div>
+		<button type="button" class="btn btn-primary" (click)="create()">Create</button>
+	</form>
+</div>
