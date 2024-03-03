@@ -7,12 +7,14 @@ import { AllSuperHeroesComponent } from './super-heroes/all-super-heroes/all-sup
 import { HttpClientModule } from '@angular/common/http';
 import { AddSuperHeroesComponent } from './super-heroes/add-super-heroes/add-super-heroes.component';
 import { FormsModule } from '@angular/forms';
+import { EditSuperHeroesComponent } from './super-heroes/edit-super-heroes/edit-super-heroes.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		AllSuperHeroesComponent,
-		AddSuperHeroesComponent
+		AddSuperHeroesComponent,
+  EditSuperHeroesComponent
 	],
 	imports: [
 		BrowserModule,
